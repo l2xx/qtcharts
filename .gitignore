@@ -265,3 +265,5 @@ qtc-qmldbg
 *.map
 work
 
+build/
+doc/

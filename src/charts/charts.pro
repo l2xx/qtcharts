@@ -82,6 +82,8 @@ msvc {
     QMAKE_CXXFLAGS_WARN_ON += -wd4267
 }
 
+win32-msvc*: QMAKE_CXXFLAGS += /FI$$PWD/../msvc_compat.h
+
 win32:!winrt:!wince {
     # ChartThemeSystem uses Windows native API
     LIBS += -luser32
